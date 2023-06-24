@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.input--all {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    input {
+        padding: 10px 15px;
+        border-radius: 12px;
+        border: 1px solid #3d3d3d;
+        outline: none;
+        color: #3d3d3d;
+        font-size: 14px;
+    }
+}
+
+.admin--all {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+
+    .card {
+        width: max-content;
+        height: max-content;
+        max-width: 220px;
+        border: 1px solid #3d3d3d;
+
+        .img_block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                width: 100px;
+                min-width: 50px;
+            }
+        }
+
+        .text_block {
+            padding: 10px 20px 0 20px;
+
+            h1 {
+                font-weight: normal;
+                font-size: 16px;
+                color: #ff0096;
+                margin: 0;
+
+                b {
+                    font-size: 14;
+                    color: #3d3d3d;
+                }
+            }
+        }
+
+        .number_block {
+            padding: 10px 20px 10px 20px;
+
+            h1 {
+                font-weight: normal;
+                font-size: 16px;
+                color: #ff0096;
+                margin: 0;
+
+                b {
+                    font-size: 14px;
+                    color: #3d3d3d;
+                }
+            }
+        }
+
+        ul {
+            padding: 0px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                border: 1px solid #FF8A00;
+                background: #FF8A00;
+                color: #fff;
+                padding: 5px 12px;
+                font-size: 12px;
+                border-radius: 20px;
+                transition: all 0.3s;
+            }
+
+            button:hover {
+                background: none;
+                color: #FF8A00;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
